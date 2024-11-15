@@ -1,0 +1,49 @@
+/* -------------------------------------------------------------------------------- */
+/* COMPONENTS - HERO */
+/* -------------------------------------------------------------------------------- */
+.m-hero {
+    align-content: center;
+    display: grid;
+    gap: 0;
+    grid-area: 1 / 1 / 2 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--hero-height);
+    justify-content: center;
+   
+    .image-con {
+        grid-area: inherit;
+        .image {
+            display: grid;
+            height: 100%;
+            min-width: var(--client-width);
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .mask {
+        background: var(--hero-mask-background);
+        display: grid;
+        grid-area: inherit;
+        max-width: 100%;
+    }
+
+    .content {
+        align-items: center;
+        display: grid;
+        grid-area: inherit;
+        margin-left: var(--spacing-20);
+        margin-right: var(--spacing-20);
+        text-align: center;
+
+        :is(h1) {
+            margin-bottom: var(--spacing-36);
+        }
+    }
+        
+    .message {
+        font-size: var(--font-size-xl);
+        font-weight: var( --font-weight-medium);
+        color: var(--hero-text-color);
+    }   
+}

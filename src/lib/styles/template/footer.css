@@ -1,0 +1,33 @@
+/* -------------------------------------------------------------------------------- */
+/* TEMPLATE - FOOTER */
+/* -------------------------------------------------------------------------------- */   
+footer {
+    background: var(--color-gray-darker);
+    padding: var(--spacing-80) var(--spacing-20);
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: var(--spacing-60) var(--spacing-12);
+    }    
+
+    .links {
+        display: flex;
+        font-size: var(--font-size-xs);
+        gap: var(--spacing-40);
+        justify-content: center;
+        margin-bottom: var(--spacing-40);
+    }
+
+    .fine-print {
+        color: var(--color-white);
+        text-align: center;
+    }
+
+    .copyright {
+        font-size: var(--font-size-xs);
+    }
+
+    .rights {
+        font-size: var(--font-size-xxs);
+    }
+}

@@ -1,0 +1,122 @@
+/* -------------------------------------------------------------------------------- */
+/* ELEMENTS */
+/* -------------------------------------------------------------------------------- */   
+
+@import '@fontsource/fira-mono';
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-shadow: none !important;
+}
+
+body, html {
+	min-height: 100vh;
+	min-width: var(--client-width);
+
+	margin: 0;
+
+	background-attachment: fixed;
+	background-color: var(--color-background-primary);
+	background-size: 100vw 100vh;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-light);
+    letter-spacing: 1px; 
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased; 
+    -webkit-tap-highlight-color: var(--color-white);
+    -webkit-text-size-adjust: none;
+
+    /* SCROLLBAR - mixin/scrollbar.css */
+    /* For Google Chrome, Safari, and Edge */
+    &::-webkit-scrollbar {
+        width: var(--scroll-pip-width);
+        height: var(--scroll-pip-height);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--scroll-thumb);
+        border-radius: var(--border-radius-sb);
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--scroll-background);
+    }
+    
+    /* For Internet Explorer */
+    & {
+        scrollbar-face-color: var(--scroll-thumb);
+        scrollbar-track-color: var(--scroll-background);
+    }
+
+    /* For Firefox */
+    & {
+        scrollbar-width: thin;
+        scrollbar-color: var(--scroll-thumb) var(--scroll-background);
+    }    
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: var(--color-primary);
+}
+
+:is(p) {
+	line-height: 1.5;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+    margin: 0;
+}
+
+:is(h1) {
+    font-size: var(--font-size-l);
+    font-weight: var( --font-weight-semi-bold);
+}
+
+:is(h2) {
+    margin-bottom: var(--spacing-20);
+}
+
+h3 {
+    font-size: var(--font-size-m);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.bullets {
+    list-style-type: circle;
+    padding-left: var(--spacing-20);
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+pre {
+    font-size: 16px;
+    font-family: var(--font-mono);
+    background-color: var(--color-background-secondary);
+    border-radius: 3px;
+    box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+    padding: 0.5em;
+    overflow-x: auto;
+    color: var(--color-black);
+}
+
+.visually-hidden:focus, .visually-hidden:focus-visible {
+    clip: auto;
+    height: auto;
+    width: auto;
+    white-space: normal;
+    overflow: visible;
+    position: static;
+}

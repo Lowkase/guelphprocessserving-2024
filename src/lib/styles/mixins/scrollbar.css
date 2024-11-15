@@ -1,0 +1,31 @@
+/* -------------------------------------------------------------------------------- */
+/* SCROLLBAR EXAMPLE */
+/* -------------------------------------------------------------------------------- */
+
+/* For Google Chrome, Safari, and Edge 
+&::-webkit-scrollbar {
+    width: var(--scroll-pip-width);
+    height: var(--scroll-pip-height);
+}
+&::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb);
+    border-radius: var(--border-radius-sb);
+}
+&::-webkit-scrollbar-track {
+    background: var(--scroll-background);
+}
+*/
+
+/* For Internet Explorer 
+& {
+    scrollbar-face-color: var(--scroll-thumb);
+    scrollbar-track-color: var(--scroll-background);
+}
+*/
+
+/* For Firefox
+& {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb) var(--scroll-background);
+}
+*/

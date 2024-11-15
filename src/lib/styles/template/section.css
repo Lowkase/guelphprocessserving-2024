@@ -1,0 +1,58 @@
+/* -------------------------------------------------------------------------------- */
+/* TEMPLTE - SECTION */
+/* -------------------------------------------------------------------------------- */   
+section {
+    background: var(--color-background-primary);
+    padding: var(--spacing-80);
+
+    :is(h2) {
+        align-items: center;
+        display: flex;
+        margin-top: var(--spacing-8);
+        margin-bottom: var(--spacing-20);
+        gap: var(--spacing-8);
+    
+        :is(svg) {
+            fill: var(--color-primary);
+            display: block;
+            height: var(--spacing-40);
+            width: var(--spacing-40);
+        }
+    
+        :is(span) {
+            color: var(--color-primary);
+            display: block;
+            line-height: var(--spacing-48);
+            margin-left: var(--spacing-8);
+        }
+    }
+
+   :is(p) {
+        color: var(--color-text);
+    }
+    
+    @media (max-width: 1024px) {
+        padding: var(--spacing-60) var(--spacing-60);
+    }
+
+    @media (max-width: 768px) {
+        padding: var(--spacing-40) var(--spacing-40);
+    }
+}
+
+.section-secondary {
+    background: var(--color-background-secondary);
+
+    :is(h2) {
+        :is(svg) {
+            fill: var(--color-blue-darker);
+        }
+        :is(span) {
+            color: var(--color-blue-darker);
+        }
+    }
+
+    :is(p) {
+        color: var(--color-text);
+    }
+}
