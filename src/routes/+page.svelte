@@ -1,235 +1,212 @@
 <script>
-	import about from '$lib/svgs/about.svg?raw';
-	import benefits from '$lib/svgs/benefits.svg?raw';
-	import bodymind from '$lib/svgs/bodymind.svg?raw';
-	import calendar from '$lib/svgs/calendar.svg?raw';
-	import fees from '$lib/svgs/fees.svg?raw';
-	import treatments from '$lib/svgs/treatments.svg?raw'; 
-
-	import mike from '$lib/images/mike.jpeg'
-	import myfm from '$lib/images/myfm-spirit-award.png'
-
-	import Header from '$lib/components/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import Hero from '$lib/components/Hero.svelte'
-	import ButtonLink from '$lib/components/ButtonLink.svelte'
+
+	import SvgEmail from '$lib/svgs/email.svg?raw';
+	import SvgPhone from '$lib/svgs/phone.svg?raw';
+
+	import ImageVideo from '$lib/images/video.jpg'
 </script>
 
 <main class="p-home">
-	<Header />
 	<Hero />
 
-	<!-- TREATMENTS / FEES -->
-	<section class="section-treatment">
-		<div class="m-col m-col-2">
-			<div>
-				<h2>
-					{@html treatments}
-					<span>Treatments</span>
-				</h2>
-				<p>
-					After a careful assessment and consultation, we will create your treatment plan using one or 
-					more of the following techniques:
-				</p>
-				<ul>
-					<li>Swedish massage</li>
-					<li>Remedial exercises</li>
-					<li>Manual Lymphatic Drainage</li>
-					<li>Friction and Trigger Point Therapy</li>
-					<li>Sports Massage</li>
-					<li>Fascial Work</li>
-				</ul>
-				<ButtonLink
-					link="https://mikevecchiormt.clinicsense.com/book"
-					scheme="m-button-content"
-					svgShow={true}
-					svgSvg={calendar}
-					text="BOOK AN APPOINTMENT"
-				/>
+	<!-- WHAT -->
+	<section class="section-what">
+		<div>
+			<h2>
+				<span>Guelph Process Serving specializes in Process Serving and Court Filing</span>
+			</h2>
+			<p>
+				We service the City of Guelph and surrounding areas for the following courts:
+			</p>
+			<ul>
+				<li>Small Claims Court</li>
+				<li>Ontario Court of Justice</li>
+				<li>Superior Court of Justicee</li>
+				<li>Court Filing</li>
+			</ul>
+		</div>
+		<div class="sub-section">
+			<h2>
+				<span>To get started</span>
+			</h2>
+			<p>
+				Simply provide your document(s) and a memo outlining your instructions for process serving or court filing to Guelph Process Serving.
+				Use any of the following ways to connect with us::
+			</p>
+			<div class="contacts">
+				<div class="contact sub-section">
+					<div class="contact-title">
+						<div class="contact-svg">
+							{@html SvgEmail}
+						</div>
+						<div class="contact-label">
+							Email
+						</div>
+					</div>
+					<div class="value">
+						<a href="mailto:guelphprocessserving@rogers.com" rel="noreferrer" target="_blank">
+							Our Email Address
+						</a>
+					</div>
+				</div>
+				<div class="contact sub-section">
+					<div class="contact-title">
+						<div class="contact-svg">
+							{@html SvgEmail}
+						</div>
+						<div class="contact-label">
+							Post
+						</div>
+					</div>
+					<div>
+						13 Robertson Dr., Guelph, ON, N1H 4S8
+					</div>
+				</div>
+				<div class="contact sub-section">
+					<div class="contact-title">
+						<div class="contact-svg">
+							{@html SvgPhone}
+						</div>
+						<div class="contact-label">
+							Courier Pickup
+						</div>
+					</div>
+					<div>
+						<a href="tel:519-400-1479" rel="noreferrer" target="_blank" aria-label="Call 519-400-1479">
+							519-400-1479
+						</a>
+					</div>
+				</div>
 			</div>
-			<div>
-				<h2>
-					{@html fees}
-					<span>Fees</span>
-				</h2>
-				<ul>
-					<li>30 minutes - $60</li>
-					<li>45 minutes - $75</li>
-					<li>60 minutes - $90</li>
-					<li>75 minutes - $120</li>
-				</ul>
-			</div>
+			<p>
+				Once your documentation has been received we will promptly provide you with an Affidavit of Service or email confirmation of court filing.
+			</p>
 		</div>
 	</section>
 
 
-	<!-- BENEFITS -->
-	<section class="section-benefits section-secondary">
+	<!-- FEES -->
+	<section class="section-fees section-secondary sub-section">
 		<h2>
-			{@html benefits}
-			<span>Benefits of Massage</span>
+			Fees
 		</h2>
-		<div class="benefits-list">
-			<div class="benefit-list-item">
-				<h3>Everyone</h3>
-				<div>
-					Massage therapy offers numerous benefits to the entire body. It helps ease joint and muscle pain, 
-					and can help with natural pain control, blood pressure issues, boost your immune system, flush 
-					toxins, and assist in injury healing.
+		<div>
+			<div class="fees-section">
+				<h3>Process Serving</h3>
+				<div class="fees">
+					<div class="fee">
+						<div>Service including Commissioned Affidavit of Service within the City of Guelph</div>
+						<div class="fee-value">$80</div>
+					</div>
+					<div class="fee">
+						<div>Service including Commissioned Affidavit of Service outside the City of Guelph (up to 6 hour drive)</div>
+						<div class="fee-value">$80 + $0.90/km</div>
+					</div>
+					<div class="fee">
+						<div>Missed attempts at Service</div>
+						<div class="fee-value">$30 per attempt</div>
+					</div>
+					<div class="fee">
+						<div>Rush/same day Service</div>
+						<div class="fee-value">add $35</div>
+					</div>
 				</div>
 			</div>
-			<div class="benefit-list-item">
-				<h3>Athletes</h3>
-				<div>
-					Involved in sports? Specific treatments tailored to improving and maintaining a healthy body. Focussing on 
-					stretching and strengthening is key to a healthy athlete. Maintenance treatments will keep you active and 
-					happy!
+			<div class="fees-section sub-section">
+				<h3>Court Filing</h3>
+				<div class="fees">
+					<div class="fee">
+						<div>Court Filing within the City of Guelph</div>
+						<div class="fee-value">$30</div>
+					</div>
+					<div class="fee">
+						<div>Filing outside the City of Guelph (up to 6 hour drive)</div>
+						<div class="fee-value">$27 + $0.80/km</div>
+					</div>
+					<div class="fee">
+						<div>Rush/same day Filing</div>
+						<div class="fee-value">add $35</div>
+					</div>
 				</div>
 			</div>
-			<div class="benefit-list-item">
-				<h3>Seniors</h3>
-				<div>
-					The massage techniques utilized for seniors include lighter, gentle stroking and kneading as well as 
-					application of pressure to specific points on the body. Even the most gentle massage has proven effects 
-					on the nervous system and blood circulation, two of the most vulnerable systems of the body that feel 
-					the effects of aging.  A typical massage for a senior usually involves a short session lasting around 
-					thirty minutes.
+			<div class="fees-section  sub-section">
+				<h3>Delivery</h3>
+				<div class="fees">
+					<div class="fee">
+						<div>Delivery within the City of Guelph</div>
+						<div class="fee-value">$20</div>
+					</div>
+					<div class="fee">
+						<div>Mailing fee per 8x12 envelope</div>
+						<div class="fee-value">$5</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-	<!-- BODY AND MIND -->
-	<section class="section-body-and-mind">
-		<h2>
-			{@html bodymind}
-			<span>Body and Mind</span>
-		</h2>
-		<div class="m-col m-col-2">
-			<div>
-				<h3>Increase</h3>
-				<ul>
-					<li>Pain control</li>
-					<li>Quality of sleep</li>
-					<li>Immune system</li>
-					<li>Respiratory function</li>
-					<li>Circulation</li>
-					<li>Joint range of motion (ROM)</li>
-					<li>Flexibility</li>
-					<li>Sense of well-being</li>
-				</ul>
-			</div>
-			<div>
-				<h3>Decrease</h3>
-				<ul>
-					<li>Stress and anxiety</li>
-					<li>Blood pressure</li>
-					<li>Muscle tension</li>
-					<li>Neurological excitability (nerves more relaxed)</li>
-					<li>Muscle spasms</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
 
 	<!-- ABOUT -->
-	<section class="section-secondary">
+	<section class="section-about">
 		<h2>
-			{@html about}
 			<span>About</span>
 		</h2>
-		<p>
-			<img class="image-mike" src={mike} alt="Portrait of Mike Vecchio" /> My interest in massage therapy 
-			began nearly 20 years ago after two motor vehicle accidents.  
-			With massage therapy, physiotherapy and other modalities, I was able to return to a healthy me.  
-			Since then massage has always been important to me, both physically and mentally.  As an RMT I 
-			look forward to working with my clients in a relaxing, calm and welcoming environment. Our lives 
-			today can be overwhelming, and massage gives us that chance to unwind, focus on what our bodies 
-			are telling us, and allow us to heal and relax.
-		</p>
-		<p>
-			As a husband, father of 5, and grandfather, I know how busy and stressful life can be. It’s 
-			important to look after ourselves, so we can feel our best to take on what life offers with 
-			enthusiasm!                        
-		</p>
-		<p>
-		I graduated with honours from Westervelt College Massage Therapy Program in 2019. I enjoy 
-		working with clients of all ages to assist in promoting a healthier life, providing relaxation 
-		and treating various issues. In my spare time I enjoy being outdoors, gardening and fishing, 
-		and hikes with my wife!
-		</p>
-		<p>
-			&#34;The practice of Massage Therapy is the assessment of the soft tissue and joints of the body 
-			and the treatment and prevention of physical dysfunction and pain of the soft tissue and joints 
-			by manipulation to develop, maintain, rehabilitate or augment physical function, or relieve pain.&#34; 
-			(Massage Therapy Act, 1991)
-		</p>
-		<p>
-			&#34;Massage therapy consists primarily of hands-on manipulation of the soft tissues of the body, 
-			specifically, the muscles, connective tissue, tendons, ligaments and joints for the purpose of 
-			optimizing health. Massage therapy treatment has a therapeutic effect on the body and optimizes 
-			health and well-being by acting on the muscular, nervous and circulatory systems. Physical function 
-			can be developed, maintained and improved; and physical dysfunction and pain and the effects of 
-			stress can be relieved or prevented through the use of Massage Therapy. Various specialized 
-			movements of the hands, over the skin or clothes, make up the Massage Therapy treatment. The 
-			Massage Therapist will work with your level of pain tolerance during the treatment, and the 
-			treatment can be stopped at any time should the treatment become 
-			uncomfortable.&#34; <a href="http://www.cmto.com" target="_blank" rel="noopener noreferrer">&#40;www.cmto.com&#41;</a>
-		</p>
-	</section>
-
-	<!-- MYFM -->
-	<section class="section-myfm">
-		<img class="image-myfm" src={myfm} alt="Voted best Massage Therapist, Mike Vecchio" />
-		<div class="text-myfm">Voted best Massage Therapist, Mike Vecchio</div>
+		<div>
+			<div>
+				<p>
+					With over a decade of experience working in the legal field, we have the experience required to effectively, and efficiently handle your process serving and filing requirements. We have the relevant Knowledge of Family Law, Civil Litigation, and Small Claims to assist you in getting the job done right.
+				</p>
+				<p>
+					Check out this video showing Guelph Process Serving in action:
+				</p>
+				<a href="http://vimeo.com/32691479" target="_blank" rel="noreferrer">
+					<img class="video" src={ImageVideo} alt="The story behind Guelph Process Serving" />
+				</a>
+			</div>
+		</div>
 	</section>
 
 	<Footer />
 </main>
 
-<style>
-	:global(.section-treatment .m-button) {
-		margin-top: var(--spacing-36);
-	}
-
-	.benefit-list-item {
-		margin-bottom: var(--spacing-28);
-	}
-
-	.image-mike {
-		border-radius: var(--spacing-8);
-		float: left;
-		margin-bottom: var(--spacing-4);
-		margin-right: var(--spacing-20);
-		width: 180px;
-
-		@media (max-width: 600px) {
-			float: none;
-			width: 100%;
-		}
-	}
-
-	.section-myfm {
+<style lang="css">
+	.contact-title {
+    	align-items: center;
 		display: flex;
-		flex-direction: column;
+    	gap: var(--spacing-8);
+	}
+
+	.contact-svg {
 		align-items: center;
-		text-align: center;
+		display: flex;
+		fill: var(--color-black);
+		justify-content: center;
+		width: var(--spacing-32);
 	}
 
-	.image-myfm {
-		width: 320px;
-		max-width: 100%;
-	}
-	@media (min-width: 768px) {
-		.image-myfm {
-			width: 300px;
-		}
+	.fees-section {
+		background-color: var(--color-white);
+		border-radius:  var(--spacing-8);
+		padding: var(--spacing-20);
 	}
 
-	.text-myfm {
-		color: var(--color-black);
-		font-weight: var(--font-weight-medium);
+	.fees-section h3 {
+		margin-bottom: var(--spacing-8);
+	}
+
+	.fees {
+    	display: flex;
+    	flex-direction: column;
+    	gap: var(--spacing-8);
+	}
+
+	.fee-value {
+		font-weight: var(--font-weight-bold);
+	}
+
+	.video {
+		max-width: 600px;
+		width: 100%;
 	}
 </style>

@@ -1,18 +1,15 @@
 <script>
-	import phone from '$lib/svgs/phone.svg?raw';
+	import Email from '$lib/svgs/email.svg?raw';
 
 	export let emailAddress = '';
 	export let emailSubject = '';
-	export let emailBody = '';
 	export let scheme = '';
 	export let svgShow = false;
 	export let text = '';
   
-	// maillink if it exists
-	$: mailtoLink = emailAddress
-  	? `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
-  	:'#';</script>
-  
+	let mailtoLink = "mailto:" + emailAddress + "?subject=" + emailSubject;
+</script>
+	
 <a
 	class="m-button {scheme}"
 	href={mailtoLink}
@@ -20,7 +17,7 @@
 	target="_blank"
 >
 	{#if svgShow}
-		{@html phone}
+		{@html Email}
 	{/if}
 	<div class="text">{text}</div>
 </a>

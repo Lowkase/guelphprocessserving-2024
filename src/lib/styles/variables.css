@@ -6,7 +6,7 @@
     /* CLIENT */
     /* -------------------------------------------------------------------------------- */
     --client-height:                720px;
-    --client-width:                 320px;
+    --client-width:                 360px;
     --client-width-max:             1024px;
 
     
@@ -17,30 +17,26 @@
     
     /* WHITE */
     --color-white-opaque:           rgba(255,255,255,0);
-    --color-white:                  #F9FFFF;
+    --color-white: 					#FFFFFF;
+    --color-white-darker:           #F1F1F1;
     
     /* BLACK */
     --color-black:                  #000000;
     
     /* GRAY */
-    --color-gray:                   #e6e6e6;
-    --color-gray-darker:            #3f3f3f;
-    --color-gray-dark:              #bcbcbc;  
-    
-    /* ORGANGE */
-    --color-orange:                 #e16500;
-    --color-orange-lighter:         #fffbf7;
-    
-    /* BLUE */
+    --color-gray:                   #0B0E11;
+    --color-gray-opaque:            rgba(7, 14, 17, .5); 
+   
+     /* BLUE */
+    --color-blue-normal:            #005ED9;
+    --color-blue-light:             #D6E6FA;
     --color-blue-opaque:            rgba(12,25,31, 0.90);
-    --color-blue:                   #E3F2FD;
-    --color-blue-darker:            #0065ad;
-    
+
     
     /* FONTS */
     /* -------------------------------------------------------------------------------- */
-    --font-family:                  'Nunito', sans-serif;
-    --font-mono:                    'Fira Mono', monospace;
+    --font-family:                  Special Elite, sans-serif;;
+    --font-family-title:            Merriweather, sans-serif;;
 
     --font-weight-thin: 200;
     --font-weight-extra-light: 300;
@@ -58,6 +54,7 @@
     --font-size-ml: 1.5rem;        /* 24px */
     --font-size-l: 1.625rem;       /* 26px */
     --font-size-xl: 2.125rem;      /* 34px */
+    --font-size-xxl: 2.5rem;       /* 40px */
     
     @media (min-width: 768px) {
         --font-size-xxs: 0.6875rem;   /* 11px */
@@ -78,6 +75,7 @@
     --spacing-20:                   20px;
     --spacing-24:                   24px;
     --spacing-28:                   28px;
+    --spacing-32:                   32px;
     --spacing-36:                   36px;
     --spacing-40:                   40px;
     --spacing-48:                   48px;
@@ -126,7 +124,7 @@
     /* -------------------------------------------------------------------------------- */
 
     /* PRIMARY / SECONDARY / TERTIARY */
-    --color-primary:                                     var(--color-orange);
+    --color-primary:                                     var(--color-blue-normal);
     --color-secondary:                                   var(--color-blue);
 
     /* TEXT COLOR */
@@ -149,7 +147,8 @@
     /* -------------------------------------------------------------------------------- */
     /* COMPONENTS */
     /* -------------------------------------------------------------------------------- */
-    --hero-height:                                       600px;
+    --hero-height:                                       260px;
+    --hero-height-mobile:                                460px;
     --hero-mask-background:                              linear-gradient(60deg, var(--color-blue-opaque), var(--color-white-opaque));
     --hero-text-color:                                   var(--color-white);
 }

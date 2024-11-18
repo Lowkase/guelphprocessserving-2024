@@ -20,7 +20,7 @@ section {
         }
     
         :is(span) {
-            color: var(--color-primary);
+            color: var(--color-black);
             display: block;
             line-height: var(--spacing-48);
             margin-left: var(--spacing-8);
@@ -41,7 +41,7 @@ section {
 }
 
 .section-secondary {
-    background: var(--color-background-secondary);
+    background: var(--color-blue-light);
 
     :is(h2) {
         :is(svg) {
@@ -55,4 +55,8 @@ section {
     :is(p) {
         color: var(--color-text);
     }
+}
+
+.sub-section {
+    margin-top: var(--spacing-40);
 }

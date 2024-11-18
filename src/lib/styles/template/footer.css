@@ -2,7 +2,7 @@
 /* TEMPLATE - FOOTER */
 /* -------------------------------------------------------------------------------- */   
 footer {
-    background: var(--color-gray-darker);
+    background: var(--color-black);
     padding: var(--spacing-80) var(--spacing-20);
     margin: 0 auto;
 
@@ -13,9 +13,16 @@ footer {
     .links {
         display: flex;
         font-size: var(--font-size-xs);
-        gap: var(--spacing-40);
+        gap: var(--spacing-12);
         justify-content: center;
         margin-bottom: var(--spacing-40);
+    }
+
+   .address {
+        color: var(--color-white);
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--spacing-12);
+        text-align: center;
     }
 
     .fine-print {
@@ -24,7 +31,7 @@ footer {
     }
 
     .copyright {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-xxs);
     }
 
     .rights {

@@ -10,6 +10,14 @@
     grid-template-rows: var(--hero-height);
     justify-content: center;
    
+    @media (max-width: 660px) {
+        grid-template-rows: 280px;
+    }
+
+    @media (max-width: 550px) {
+        grid-template-rows: 300px;
+    }    
+
     .image-con {
         grid-area: inherit;
         .image {
@@ -29,21 +37,43 @@
     }
 
     .content {
-        align-items: center;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-area: inherit;
-        margin-left: var(--spacing-20);
-        margin-right: var(--spacing-20);
+        gap: var(--spacing-20);
+        margin: var(--spacing-20);
         text-align: center;
 
-        :is(h1) {
-            margin-bottom: var(--spacing-36);
+        .logo {
+            height: var(--spacing-80);
+            
+            svg {
+                width: var(--spacing-80);
+            }
+        }
+        
+        .text {
+            h1, p {
+                margin: 0;
+            }
+
+            h1 {
+                color: var(--color-white);
+                font-size: var(--font-size-ml);
+            }
+            p {
+                color: var(--color-white);
+                font-size: var(--font-size-xs);
+            }
+
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: var(--font-size-m);
+                }
+                p {
+                    font-size: var(--font-size-xxs);
+                }  
+            }
         }
     }
-        
-    .message {
-        font-size: var(--font-size-xl);
-        font-weight: var( --font-weight-medium);
-        color: var(--hero-text-color);
-    }   
 }

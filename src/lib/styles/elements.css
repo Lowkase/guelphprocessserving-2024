@@ -41,13 +41,11 @@ body, html {
     &::-webkit-scrollbar-track {
         background: var(--scroll-background);
     }
-    
     /* For Internet Explorer */
     & {
         scrollbar-face-color: var(--scroll-thumb);
         scrollbar-track-color: var(--scroll-background);
     }
-
     /* For Firefox */
     & {
         scrollbar-width: thin;
@@ -69,7 +67,7 @@ h1, h2, h3 {
 }
 
 :is(h1) {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xxl);
     font-weight: var( --font-weight-semi-bold);
 }
 
@@ -82,8 +80,9 @@ h3 {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: circle;
     margin: 0;
+    margin-left: var(--spacing-20);
     padding: 0;
 }
 
