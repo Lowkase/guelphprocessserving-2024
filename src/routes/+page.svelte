@@ -123,7 +123,7 @@
 					</div>
 					<div class="fee">
 						<div>Filing outside the City of Guelph (up to 6 hour drive)</div>
-						<div class="fee-value">$27 + $0.80/km</div>
+						<div class="fee-value">$30 + $0.90/km</div>
 					</div>
 					<div class="fee">
 						<div>Rush/same day Filing</div>
