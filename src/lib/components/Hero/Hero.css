@@ -47,30 +47,30 @@
         .logo {
             height: var(--spacing-80);
             
-            svg {
+            :is(svg) {
                 width: var(--spacing-80);
             }
         }
         
         .text {
-            h1, p {
+            :is(h1, p) {
                 margin: 0;
             }
 
-            h1 {
+            :is(h1) {
                 color: var(--color-white);
                 font-size: var(--font-size-ml);
             }
-            p {
+            :is(p) {
                 color: var(--color-white);
                 font-size: var(--font-size-xs);
             }
 
             @media (max-width: 768px) {
-                h1 {
+                :is(h1) {
                     font-size: var(--font-size-m);
                 }
-                p {
+                :is(p) {
                     font-size: var(--font-size-xxs);
                 }  
             }
