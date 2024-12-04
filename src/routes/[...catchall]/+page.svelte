@@ -1,6 +1,6 @@
 <script>
-	import Footer from '$lib/components/Footer.svelte'
-	import Hero from '$lib/components/Hero.svelte'
+	import Footer from '$lib/components/Footer/Footer.svelte'
+	import Hero from '$lib/components/Hero/Hero.svelte'
 </script>
 
 <Hero />

@@ -2,8 +2,8 @@
 	import hero from '$lib/images/hero.jpg'
 	import Logo from '$lib/svgs/logo.svg?raw';
 	
-    import ButtonEmail from '$lib/components/ButtonEmail.svelte'
-	import ButtonPhone from '$lib/components/ButtonPhone.svelte'
+    import ButtonEmail from '$lib/components/Button/ButtonEmail.svelte'
+	import ButtonPhone from '$lib/components/Button/ButtonPhone.svelte'
 </script>
 
 <div class="m-hero">
@@ -40,3 +40,7 @@
 		</div>
 	</div>
 </div>
+
+<style>
+    @import url('Hero.css');
+</style>

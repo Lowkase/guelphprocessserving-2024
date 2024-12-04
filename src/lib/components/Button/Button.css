@@ -15,6 +15,7 @@
     padding: var(--spacing-8) var(--spacing-12);
     text-align: center;
     text-decoration: none;
+    transition: var(--transition-timer-100ms) var(--transition-easeInOutQuad);
 
     > :is(svg) {
         display: block;

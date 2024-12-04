@@ -1,6 +1,6 @@
 <script>
-	import Footer from '$lib/components/Footer.svelte'
-	import Hero from '$lib/components/Hero.svelte'
+	import Footer from '$lib/components/Footer/Footer.svelte'
+	import Hero from '$lib/components/Hero/Hero.svelte'
 
 	import SvgEmail from '$lib/svgs/email.svg?raw';
 	import SvgPhone from '$lib/svgs/phone.svg?raw';

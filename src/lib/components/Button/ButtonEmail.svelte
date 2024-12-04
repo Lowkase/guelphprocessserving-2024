@@ -21,3 +21,7 @@
 	{/if}
 	<div class="text">{text}</div>
 </a>
+
+<style>
+    @import url('Button.css');
+</style>

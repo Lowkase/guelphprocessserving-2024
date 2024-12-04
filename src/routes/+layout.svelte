@@ -24,6 +24,3 @@
 		<slot />
 	</main>
 </div>
-
-<style>
-</style>

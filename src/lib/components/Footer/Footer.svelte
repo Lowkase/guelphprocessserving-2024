@@ -1,6 +1,6 @@
 <script>
-    import ButtonEmail from '$lib/components/ButtonEmail.svelte'
-	import ButtonPhone from '$lib/components/ButtonPhone.svelte'
+    import ButtonEmail from '$lib/components/Button/ButtonEmail.svelte'
+	import ButtonPhone from '$lib/components/Button/ButtonPhone.svelte'
 
     const currentYear = new Date().getFullYear();
 </script>
@@ -29,3 +29,7 @@
         <div class="rights">All rights reserved</div>
     </div>
 </footer>
+
+<style>
+    @import url('Footer.css');
+</style>
